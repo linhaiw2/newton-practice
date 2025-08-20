@@ -16,4 +16,15 @@ def newton_method(f, x0, eps=1e-5, max_iter = 100, tol = 1e-6):
             break
         x_new = x - f_prime / f_double_prime
 
-        if abs
+        if abs(x_new - x) < tol:
+            return x_new  # Converged
+
+        x = x_new
+
+    return x
+    """
+    Newton strategy:
+    parameters:
+    x0: starting value
+    ...
+    """
