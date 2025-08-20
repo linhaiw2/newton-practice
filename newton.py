@@ -24,6 +24,9 @@ def newton_method(f, x0, eps=1e-5, max_iter = 100, tol = 1e-6):
     return x
     """
     Newton strategy:
+    functions:
+    1st derivative
+    2nd derivative
     parameters:
     x0: starting value
     ...
